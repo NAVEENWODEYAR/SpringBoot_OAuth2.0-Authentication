@@ -20,7 +20,7 @@ public class BookStoreController {
 
     @GetMapping
     public ResponseEntity<?> greet(){
-        LOGGER.info("Accessed/Inside test endPoint,");
+        LOGGER.info("Access granted/Inside test endPoint,");
         return ResponseEntity.status(HttpStatus.FOUND)
                 .header("Content-Type", "application/String")
                 .body("Welcome to OpenAuthentication 2.0, using GitHub,,");
